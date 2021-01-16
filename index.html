@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harry's HTML Github Page</title>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <nav>
+    <a href="/html/">HTML</a> |
+  </nav>
+  
+  <header class="page-header">
+    <h1><strong>Welcome to my Github Page!</strong></h1>
+  </header>
+
+  <main role = "main">
+    <h2>Who Am I?</h2>
+    <figure>
+    <img src="Selfie.jpg"
+         alt="A selfie I took at an abandoned mansion in Japan">
+    <figcaption>A Dashing Selfie at the abandoned Royal Hotel</figcaption>
+    </figure>
+    
+    <p> My name is <i>Harry You</i> and I’m a 3rd year undergraduate at UCSD. My hobbies include<span>Photography</span>, <span>Urban Exploration</span>, and <span>Building Gunpla!</span></p>
+    <p> To learn more about me, visit: <a href="https://www.youtube.com/watch?v=wpV-gGA4PSk">My Biography</a>
+  </main>
+
+  <h3>Some Places I've visited</h3>
+    <figure>
+    <img src="Half Moon Tunnel.jpg"
+         alt="Half Moon Tunnel">
+    </figure>
+      <aside>
+        <p><em>Half Moon Tunnel</em></p>
+      </aside>
+    
+    <picture>
+      <source srcset="Random Image.jpg">
+      <img src="">
+    </picture>
+      
+<hr> 
+
+   <section>
+      <h4>I Have <b>Proficiency</b> in:</h4>
+       <ul>
+          <li>Java</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>Linux</li>
+       <ul>
+   </section>
+
+<hr>
+
+   <section>
+      <h4>My first piece of code ever</h4>
+      <div>
+        <code>
+          <pre>
+            class HelloWorld {
+                public static void main(String[] args) {
+                    System.out.println("Hello, World!"); 
+                }
+            }
+           </pre>
+        </code>
+      </div>
+   </section>
+
+<hr>
+
+  <section>
+    <h4>Random Haiku Plagiarized from Online<h4>
+    <p>
+    Haikus are easy<br>
+    But sometimes they don’t make sense<br>
+    Refrigerator
+    </p>
+  </section>
+  
+<hr>
+  <iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+  </iframe>
+  
+<hr>
+    <audio
+        controls
+        src="NeverGonnaGiveYouUp.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  
+<hr>
+    <video controls width="250">
+
+        <source src="/media/cc0-videos/flower.mp4"
+                type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+    </video>
+ 
+ <hr>
+  <canvas width="300" height="300">
+    An alternative text describing what your canvas displays.
+  </canvas>
+  
+  <hr>
+  
+    <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+      <circle cx="50" cy="50" r="40" />
+      <circle cx="150" cy="50" r="4" />
+
+      <svg viewBox="0 0 10 10" x="200" width="100">
+        <circle cx="5" cy="5" r="4" />
+      </svg>
+    </svg>
+
+<hr>
+
+    <form action="" method="get" class="form-example">
+      <div class="form-example">
+        <label for="name">Enter your name for no reason: </label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-example">
+        <label for="email">Enter your email for no reason: </label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="form-example">
+        <input type="submit" value="Okay!">
+      </div>
+    </form>
+ 
+ <hr>
+ 
+ <label for="mood-select">Choose a Mood:</label>
+<select id="mood-select">
+    <optgroup label="Good Moods">
+        <option>Relaxed</option>
+        <option>Happy</option>
+        <option>Determined</option>
+    </optgroup>
+    <optgroup label="Bad Moods">
+        <option>Anxious</option>
+        <option>Angry</option>
+        <option>Annoyed</option>
+    </optgroup>
+</select>
+
+<hr>
+    <div class="preference">
+        <label for="cheese">Do you like Dogs?</label>
+        <input type="checkbox" name="Dogs" id="Dogs">
+    </div>
+
+    <div class="preference">
+        <label for="cats">Do you like cats?</label>
+        <input type="checkbox" name="cats" id="cats">
+    </div>
+ 
+<hr>
+    <form>
+      <fieldset>
+        <legend>Do you like Animals?</legend>
+
+        <input type="radio" id="yes" name="choices">
+        <label for="yes">Yes</label><br/>
+
+        <input type="radio" id="yes" name="choices">
+        <label for="yes">Yes</label><br/>
+
+        <input type="radio" id="yes" name="choices">
+        <label for="yes">Yes</label>
+      </fieldset>
+    </form>
+  
+<hr>
+  <h4>Random Inputs Baby!<h4>
+  
+    <label for="name">Name (4 to 8 characters):</label>
+
+  <input type="text" id="name" name="name" required
+         minlength="4" maxlength="8" size="10"
+         
+  <input class="favorite styled"
+       type="button"
+       value="Add to favorites">
+    
+  <p>Choose your monster's features:</p>
+
+<div>
+  <input type="checkbox" id="scales" name="scales"
+         checked>
+  <label for="scales">Scales</label>
+</div>
+
+<div>
+  <input type="checkbox" id="horns" name="horns">
+  <label for="horns">Horns</label>
+</div>
+
+<p>Choose your monster's colors:</p>
+
+<div>
+    <input type="color" id="head" name="head"
+           value="#e66465">
+    <label for="head">Head</label>
+</div>
+
+<div>
+    <input type="color" id="body" name="body"
+            value="#f6b73c">
+    <label for="body">Body</label>
+</div>
+
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">
+       
+ <label for="email">Enter your gmail:</label>
+
+<input type="email" id="email"
+       pattern=".+@gmail.com" size="30" required>
+   
+ <label for="avatar">Choose a profile picture:</label>
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+       
+<label for="start">Birth month:</label>
+
+<input type="month" id="start" name="start"
+       min="2018-03" value="2018-05">
+       
+<label for="tentacles">Number of tentacles (10-100):</label>
+
+<input type="number" id="tentacles" name="tentacles"
+       min="10" max="100">
+ 
+<div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+</div>
+
+<div>
+    <label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>
+
+<input type="submit" value="Sign in">
+
+<hr>   
+
+<label for="story">Tell us your story:</label>
+
+<textarea id="story" name="story"
+          rows="5" cols="33">
+I'm burned out from this Lab...
+</textarea>
+
+<hr>
+
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+
+<hr>
+<label for="pet-select">Choose a pet:</label>
+
+<select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
+
+<hr>
+<label for="pet-select">Choose a pet:</label>
+
+<select id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
+
+<hr>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The left column</td>
+            <td>The right column</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<table>
+    <caption>League of Legend Stars</caption>
+    <tr>
+        <th scope="col">Player</th>
+        <th scope="col">CS</th>
+        <th scope="col">Rank</th>
+    </tr>
+    <tr>
+        <th scope="row">Faker</th>
+        <td>100+</td>
+        <td>Challenger</td>
+    </tr>
+    <tr>
+        <th scope="row">Tyler1</th>
+        <td>170+</td>
+        <td>Challenger</td>
+    </tr>
+    <tr>
+        <th scope="row">Hide in Bush</th>
+        <td>200+</td>
+        <td>Challenger</td>
+    </tr>
+</table>
+<hr>
+<table>
+    <caption>Superheros and sidekicks</caption>
+    <colgroup>
+        <col>
+        <col span="2" class="batman">
+        <col span="2" class="flash">
+    </colgroup>
+    <tr>
+        <td> </td>
+        <th scope="col">Batman</th>
+        <th scope="col">Robin</th>
+        <th scope="col">The Flash</th>
+        <th scope="col">Kid Flash</th>
+    </tr>
+    <tr>
+        <th scope="row">Skill</th>
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+        <td>Super speed</td>
+        <td>Super speed</td>
+    </tr>
+</table>
+
+<hr>
+
+<details>
+    <summary>Details</summary>
+    What's Up.
+</details>
+
+<hr>
+
+<details>
+    <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+    Joe Mama.
+</details>
+
+<hr>
+
+<div id="container"></div>
+
+<template id="template">
+  <div>Click me</div>
+</template>
+
+<hr>
+   <footer>
+        <p>@ 2021 Harry</p>
+   </footer>  
+  </body>
+
+</html>
