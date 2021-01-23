@@ -3,11 +3,10 @@
 <head>
   <title>Harry's HTML Github Page</title>
   <meta charset="utf-8"/>
-  <link href="main.css" rel="stylesheet">
-
+  <link href ="main.css" rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
 <style>
   @font-face {
-  font-family: pottaOne;
+  font-family: "pottaOne";
   src: url(PottaOne-Regular.ttf);
 }
   p.highlight { 
@@ -15,7 +14,7 @@
 }
   
   #firstname {
-  background-color: pink;
+  background-color: red;
 }
   
   div * {
@@ -70,13 +69,13 @@ main ~ p {
 div {
   background-color: lightgrey;
   width: 300px;
-  border: 15px solid green;
+  border: 15px solid;
+  border-color: green;
   padding: 50px;
   margin: 20px;
 }
 h3 > p {
   background-color: blue
-  border-color: green;
 }
 
 #divEdit {
@@ -103,7 +102,7 @@ h1  {
       
   height: 200px;
   width: 50%;
-  position: sticky;
+  position: absolute;
    
   text-decoration: overline;
 }
@@ -143,7 +142,7 @@ flex-container {
   
   flex-flow:row wrap;
   
-  justify-content: space0around;
+  justify-content: space-around;
  }
 
 .wrapper {
@@ -155,11 +154,11 @@ flex-container {
     flex: 1 100%;
 }
   
-@media all and (min-width: 600px) {
+@media all && (min-width: 600px) {
   .aside { flex: 1 auto; }
 }
  
-@media all and (min-width: 800px) {
+@media all && (min-width: 800px) {
   .main {flex: 2 0px; }
   .aside-1 {order: 1; }
   .main    {order: 2; }
@@ -167,19 +166,19 @@ flex-container {
   .footer  {order: 4; }
 }
   
-.navigation P
+.navigation {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
 }
   
-@media all and (max=width: 200px) {
+@media all && (max=width: 200px) {
   .navgiation {
     justify-content: space-around;
   }
 }
   
-@media all and (max-width:500px) {
+@media all && (max-width:500px) {
   .navigation {
     flex-direction: column;
 }
