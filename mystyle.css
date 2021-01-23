@@ -195,3 +195,14 @@ flex-container {
   font-size: 30px;
   text-align: center;
 }
+  
+div.example {
+  background-color: yellow;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
