@@ -4,6 +4,129 @@
   <title>Harry's HTML Github Page</title>
   <meta charset="utf-8"/>
   <link href="main.css" rel="stylesheet">
+
+<style>
+  p.highlight { 
+  background: #08fcb5;
+}
+  
+  #firstname {
+  background-color: pink;
+}
+  
+  div * {
+  background-color: rgb(204, 255, 255);
+ }
+  
+  ul li {
+  background-color: f0f;
+}
+  
+  div > p {
+  background-color: rgba(219, 57, 178, 1);
+  } 
+  
+  * {
+  text-align: center;
+  color: red;
+}
+  
+  h1, h2, p {
+  text-align: left;
+  font-size: 4em 
+  color: maroon;
+}
+ 
+a[target] {
+  border: 5cm solid red;
+}
+  
+a:visited {
+  color: hsl(304, 20%, 83%);
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: hsl(120,100%,50%, 1);
+}
+  
+section + h4 {
+  background-color: green;
+}
+  
+main ~ p {
+  background-color: yellow;
+  border-color: red;
+  border-width: 5rem;
+}
+
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+h3 > p {
+  background-color: blue
+  border-color: green;
+}
+
+#divEdit {
+  border: 2in solid red;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+ 
+h4 {
+  font-size: 150%;
+}
+h1  {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+   
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+      
+  height: 200px;
+  width: 50%;
+   
+  text-decoration: overline;
+}
+        
+h2 {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  padding: 25px 50px 75px 100px;
+  background-color: lightblue;
+        
+  text-decoration: line-through;
+}
+        
+h3 {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+        
+  text-decoration: underline;
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+        
+body {
+        color: blue;
+}
+   
+<style>
 </head>
 
 <body>
@@ -13,7 +136,7 @@
   </nav>
   
   <header class="page-header">
-    <h1><strong>Welcome to my Github Page!</strong></h1>
+    <h1 style="color:blue;text-align:center;"><strong>Welcome to my Github Page!</strong></h1>
   </header>
 
   <main role = "main">
@@ -23,11 +146,11 @@
     <figcaption>A Dashing Selfie at the abandoned Royal Hotel</figcaption>
     </figure>
     
-    <p> My name is <i>Harry You</i> and I’m a 3rd year undergraduate at UCSD. My hobbies include<span>Photography</span>, <span>Urban Exploration</span>, and <span>Building Gunpla!</span></p>
-    <p> To learn more about me, visit: <a href="https://www.youtube.com/watch?v=wpV-gGA4PSk">My Biography</a>
+    <p class="highlight"> My name is <i>Harry You</i> and I’m a 3rd year undergraduate at UCSD. My hobbies include<span>Photography</span>, <span>Urban Exploration</span>, and <span>Building Gunpla!</span></p>
+    <p id="firstname"> To learn more about me, visit: <a href="https://www.youtube.com/watch?v=wpV-gGA4PSk">My Biography</a>
   </main>
 
-  <h3>Some Places I've visited</h3>
+  <h3 id="divEdit">Some Places I've visited</h3>
     <figure>
       <img src="HalfMoonTunnel.jpg" alt="Half Moon Tunnel">
     </figure>
@@ -73,7 +196,7 @@
 
   <section>
     <h4>Random Haiku Plagiarized from Online<h4>
-    <p>
+    <p class="highlight">
     Haikus are easy<br>
     But sometimes they don’t make sense<br>
     Refrigerator
@@ -192,7 +315,7 @@
        type="button"
        value="Add to favorites">
     
-  <p>Choose your monster's features:</p>
+  <p class="dotted">Choose your monster's features:</p>
 
 <div>
   <input type="checkbox" id="scales" name="scales"
@@ -205,7 +328,7 @@
   <label for="horns">Horns</label>
 </div>
 
-<p>Choose your monster's colors:</p>
+<p class="dashed">Choose your monster's colors:</p>
 
 <div>
     <input type="color" id="head" name="head"
@@ -398,4 +521,5 @@ I'm burned out from this Lab...
    </footer>  
   </body>
 
+/* This class is suffering */
 </html>
