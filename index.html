@@ -3,9 +3,13 @@
 <head>
   <title>Harry's HTML Github Page</title>
   <meta charset="utf-8"/>
-  <link href="main.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
 
 <style>
+  @font-face {
+  font-family: pottaOne;
+  src: url(PottaOne-Regular.ttf);
+}
   p.highlight { 
   background: #08fcb5;
 }
@@ -99,11 +103,13 @@ h1  {
       
   height: 200px;
   width: 50%;
+  position: sticky;
    
   text-decoration: overline;
 }
         
 h2 {
+  position: static;
   border: 1px solid black;
   margin: 25px 50px 75px 100px;
   padding: 25px 50px 75px 100px;
@@ -115,15 +121,72 @@ h2 {
 h3 {
   width: 300px;
   margin: auto;
+  position: relative;
   border: 1px solid red;
         
   text-decoration: underline;
 }
 p.dotted {border-style: dotted;}
 p.dashed {border-style: dashed;}
-        
+
+p.ex2 {
+  display: inline;
+  max-width: 150px;
+}
+p.ex3 {
+  display: block;
+   min-width: 80px;
+}
+
+flex-container {
+  display: flex;
+  
+  flex-flow:row wrap;
+  
+  justify-content: space0around;
+ }
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  }
+  
+  .wrapper > * {
+    flex: 1 100%;
+}
+  
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+ 
+@media all and (min-width: 800px) {
+  .main {flex: 2 0px; }
+  .aside-1 {order: 1; }
+  .main    {order: 2; }
+  .aside-2 {order 3;  }
+  .footer  {order: 4; }
+}
+  
+.navigation P
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+  
+@media all and (max=width: 200px) {
+  .navgiation {
+    justify-content: space-around;
+  }
+}
+  
+@media all and (max-width:500px) {
+  .navigation {
+    flex-direction: column;
+}
+  
 body {
         color: blue;
+        font-family: pottaOne;
 }
    
 <style>
@@ -139,6 +202,14 @@ body {
     <h1 style="color:blue;text-align:center;"><strong>Welcome to my Github Page!</strong></h1>
   </header>
 
+  <ul class="flex-container">
+  <li class="flex-item">A</li>
+  <li class="flex-item">B</li>
+  <li class="flex-item">C</li>
+  <li class="flex-item">D</li>
+  <li class="flex-item">E</li>
+  <li class="flex-item">F</li>
+</ul>
   <main role = "main">
     <h2>Who Am I?</h2>
     <figure>
@@ -155,7 +226,7 @@ body {
       <img src="HalfMoonTunnel.jpg" alt="Half Moon Tunnel">
     </figure>
       <aside>
-        <p><em>Half Moon Tunnel</em></p>
+        <p class="ex1"><em>Half Moon Tunnel</em></p>
       </aside>
     
     <picture>
@@ -176,7 +247,17 @@ body {
    </section>
 
 <hr>
+  <div class="wrapper">
+  <header class="header">The word at the top of the boxy thingy</header>
+  <article class="main">
+    <p>  aslkjhdaskjsdhal askldjhaskldjhaslkd jas hlkdsajh alskjdhlka haskljdh kalsdjhlask jhdaskldjhask </p>  
+  </article>
+  <aside class="aside aside-1">Ominous yellow rectangle</aside>
+  <aside class="aside aside-2">Ominous Pink rectangle</aside>
+  <footer class="footer">The word at the bottom of this thing... in greeen</footer>
+</div>
 
+<hr>
    <section>
       <h4>My first piece of code ever</h4>
       <div>
@@ -232,6 +313,15 @@ body {
   <canvas width="300" height="300">
     An alternative text describing what your canvas displays.
   </canvas>
+ 
+  <hr>
+  <ul class="navigation">
+  <li><a href="#">Oh</a></li>
+  <li><a href="#">My</a></li>
+  <li><a href="#">Goodness</a></li>
+  <li><a href="#">Gracious</a></li>
+
+  </ul>
   
   <hr>
   
@@ -517,7 +607,7 @@ I'm burned out from this Lab...
 
 <hr>
    <footer>
-        <p>@ 2021 Harry</p>
+        <p class="ex2">@ 2021 Harry</p>
    </footer>  
   </body>
 
