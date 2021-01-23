@@ -1,0 +1,197 @@
+  @font-face {
+  font-family: pottaOne;
+  src: url(PottaOne-Regular.ttf);
+}
+  
+body {
+        color: blue;
+        font-family: pottaOne;
+}
+  
+  p.highlight { 
+  background: #08fcb5;
+}
+  
+  #firstname {
+  background-color: red;
+}
+  
+  div * {
+  background-color: rgb(204, 255, 255);
+ }
+  
+  ul li {
+  background-color: f0f;
+}
+  
+  div > p {
+  background-color: rgba(219, 57, 178, 1);
+  } 
+  
+  * {
+  text-align: center;
+  color: red;
+}
+  
+  h1, h2, p {
+  text-align: left;
+  font-size: 4em 
+  color: maroon;
+}
+ 
+a[target] {
+  border: 5cm solid red;
+}
+  
+a:visited {
+  color: hsl(304, 20%, 83%);
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: hsl(120,100%,50%, 1);
+}
+  
+section + h4 {
+  background-color: green;
+}
+  
+main ~ p {
+  background-color: yellow;
+  border-color: red;
+  border-width: 5rem;
+}
+
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid;
+  border-color: green;
+  padding: 50px;
+  margin: 20px;
+}
+h3 > p {
+  background-color: blue
+}
+
+#divEdit {
+  border: 2in solid red;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+ 
+h4 {
+  font-size: 150%;
+}
+h1  {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+   
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+      
+  height: 200px;
+  width: 50%;
+  position: absolute;
+   
+  text-decoration: overline;
+}
+        
+h2 {
+  position: static;
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  padding: 25px 50px 75px 100px;
+  background-color: lightblue;
+        
+  text-decoration: line-through;
+}
+        
+h3 {
+  width: 300px;
+  margin: auto;
+  position: relative;
+  border: 1px solid red;
+        
+  text-decoration: underline;
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+
+p.ex2 {
+  display: inline;
+  max-width: 150px;
+}
+p.ex3 {
+  display: block;
+   min-width: 80px;
+}
+
+flex-container {
+  display: flex;
+  
+  flex-flow:row wrap;
+  
+  justify-content: space-around;
+ }
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  }
+  
+  .wrapper > * {
+    flex: 1 100%;
+}
+  
+@media all && (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+ 
+@media all && (min-width: 800px) {
+  .main {flex: 2 0px; }
+  .aside-1 {order: 1; }
+  .main    {order: 2; }
+  .aside-2 {order 3;  }
+  .footer  {order: 4; }
+}
+  
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+  
+@media all && (max=width: 200px) {
+  .navgiation {
+    justify-content: space-around;
+  }
+}
+  
+@media all && (max-width:500px) {
+  .navigation {
+    flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
