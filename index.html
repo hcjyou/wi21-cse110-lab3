@@ -6,9 +6,15 @@
   <link href ="main.css" rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
 <style>
   @font-face {
-  font-family: "pottaOne";
+  font-family: pottaOne;
   src: url(PottaOne-Regular.ttf);
 }
+  
+body {
+        color: blue;
+        font-family: pottaOne;
+}
+  
   p.highlight { 
   background: #08fcb5;
 }
@@ -182,12 +188,21 @@ flex-container {
   .navigation {
     flex-direction: column;
 }
-  
-body {
-        color: blue;
-        font-family: pottaOne;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
 }
-   
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+ 
 <style>
 </head>
 
@@ -256,6 +271,21 @@ body {
   <footer class="footer">The word at the bottom of this thing... in greeen</footer>
 </div>
 
+<hr>
+  
+  <div class="grid-container">
+  <div class="grid-item">A</div>
+  <div class="grid-item">G</div>
+  <div class="grid-item">D</div>  
+  <div class="grid-item">A</div>
+  <div class="grid-item">W</div>
+  <div class="grid-item">G</div>  
+  <div class="grid-item">C</div>
+  <div class="grid-item">#</div>
+  <div class="grid-item">K</div>  
+</div>
+  
+ 
 <hr>
    <section>
       <h4>My first piece of code ever</h4>
